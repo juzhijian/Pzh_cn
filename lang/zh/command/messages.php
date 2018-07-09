@@ -1,17 +1,12 @@
 <?php
 
 return [
-    'key' => [
-        'warning' => 'It appears you have already configured an application encryption key. Continuing with this process with overwrite that key and cause data corruption for any existing encrypted data. DO NOT CONTINUE UNLESS YOU KNOW WHAT YOU ARE DOING.',
-        'confirm' => 'I understand the consequences of performing this command and accept all responsibility for the loss of encrypted data.',
-        'final_confirm' => 'Are you sure you wish to continue? Changing the application encryption key WILL CAUSE DATA LOSS.',
-    ],
     'location' => [
-        'no_location_found' => 'Could not locate a record matching the provided short code.',
-        'ask_short' => 'Location Short Code',
-        'ask_long' => 'Location Description',
-        'created' => 'Successfully created a new location (:name) with an ID of :id.',
-        'deleted' => 'Successfully deleted the requested location.',
+        'no_location_found' => '我们无法找到这个时区。',
+        'ask_short' => '时区缩写代码',
+        'ask_long' => '位置说明',
+        'created' => '成功创建了位置 (:name) ID是 :id.',
+        'deleted' => '成功删除了此位置。',
     ],
     'user' => [
         'search_users' => 'Enter a Username, UUID, or Email Address',
@@ -43,7 +38,7 @@ return [
     'server' => [
         'rebuild_failed' => 'Rebuild request for ":name" (#:id) on node ":node" failed with error: :message',
         'power' => [
-            'confirm' => 'You are about to perform a :action against :count servers. Do you wish to continue?',
+            'confirm' => 'You are about to perform a :action aganist :count servers. Do you wish to continue?',
             'action_failed' => 'Power action request for ":name" (#:id) on node ":node" failed with error: :message',
         ],
     ],
@@ -89,7 +84,7 @@ return [
             'using_redis' => 'You\'ve selected the Redis driver for one or more options, please provide valid connection information below. In most cases you can use the defaults provided unless you have modified your setup.',
             'redis_host' => 'Redis Host',
             'redis_password' => 'Redis Password',
-            'redis_pass_help' => 'By default a Redis server instance has no password as it is running locally and inaccessible to the outside world. If this is the case, simply hit enter without entering a value.',
+            'redis_pass_help' => 'By default a Redis server instance has no password as it is running locally and inaccessable to the outside world. If this is the case, simply hit enter without entering a value.',
             'redis_port' => 'Redis Port',
             'redis_pass_defined' => 'It seems a password is already defined for Redis, would you like to change it?',
         ],

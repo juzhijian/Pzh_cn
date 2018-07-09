@@ -1,30 +1,28 @@
 <?php
 
 return [
-    'daemon_connection_failed' => 'There was an exception while attempting to communicate with the daemon resulting in a HTTP/:code response code. This exception has been logged.',
+    'daemon_connection_failed' => '尝试与后端进程进行通信时发生错误。 错误代码为HTTP/:code 。我们已经记录了此情况。',
     'node' => [
-        'servers_attached' => 'A node must have no servers linked to it in order to be deleted.',
-        'daemon_off_config_updated' => 'The daemon configuration <strong>has been updated</strong>, however there was an error encountered while attempting to automatically update the configuration file on the Daemon. You will need to manually update the configuration file (core.json) for the daemon to apply these changes.',
+        'servers_attached' => '节点必须没有被添加服务器才能被删除。',
+        'daemon_off_config_updated' => '后端进程配置 <strong>已成功更新</strong>，但尝试自动更新后端进程上的配置文件时发送了不可预料的错误，您可能需要手动更新守护进程配置文件(core.json) 以应用更改。',
     ],
     'allocations' => [
-        'server_using' => 'A server is currently assigned to this allocation. An allocation can only be deleted if no server is currently assigned.',
-        'too_many_ports' => 'Adding more than 1000 ports in a single range at once is not supported.',
-        'invalid_mapping' => 'The mapping provided for :port was invalid and could not be processed.',
-        'cidr_out_of_range' => 'CIDR notation only allows masks between /25 and /32.',
-        'port_out_of_range' => 'Ports in an allocation must be greater than 1024 and less than or equal to 65535.',
+        'server_using' => '服务器当前已被分配，只有没有被分配的服务器才能被删除。',
+        'too_many_ports' => '不能一次性添加超过1000给端口，请缩小范围！',
+        'invalid_mapping' => ':port 端口的映射无效！',
+        'cidr_out_of_range' => 'CIDR 只允许 /25 或 /32 之间的掩码。',
     ],
     'nest' => [
-        'delete_has_servers' => 'A Nest with active servers attached to it cannot be deleted from the Panel.',
+        'delete_has_servers' => '此服务已经在使用了，我们无法删除。',
         'egg' => [
-            'delete_has_servers' => 'An Egg with active servers attached to it cannot be deleted from the Panel.',
-            'invalid_copy_id' => 'The Egg selected for copying a script from either does not exist, or is copying a script itself.',
-            'must_be_child' => 'The "Copy Settings From" directive for this Egg must be a child option for the selected Nest.',
-            'has_children' => 'This Egg is a parent to one or more other Eggs. Please delete those Eggs before deleting this Egg.',
+            'delete_has_servers' => '此服务容器已经在使用了,我们无法删除。',
+            'invalid_copy_id' => '您所用于复制脚本的服务容器不存在，或者正在复制脚本自身。',
+            'must_be_child' => '服务容器的“复制设置”选项必须是所选的服务的子选项。',
+            'has_children' => '这个服务容器被其他服务容器所复制,在删除本服务容器前需要先删除所复制的服务容器。',
         ],
         'variables' => [
             'env_not_unique' => 'The environment variable :name must be unique to this Egg.',
             'reserved_name' => 'The environment variable :name is protected and cannot be assigned to a variable.',
-            'bad_validation_rule' => 'The validation rule ":rule" is not a valid rule for this application.',
         ],
         'importer' => [
             'json_error' => 'There was an error while attempting to parse the JSON file: :error.',

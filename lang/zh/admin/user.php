@@ -9,10 +9,10 @@
 
 return [
     'exceptions' => [
-        'user_has_servers' => 'Cannot delete a user with active servers attached to their account. Please delete their servers before continuing.',
+        'user_has_servers' => '此用户还拥有可用的服务器,请删除他的所有服务器后再尝试删除',
     ],
     'notices' => [
-        'account_created' => 'Account has been created successfully.',
-        'account_updated' => 'Account has been successfully updated.',
+        'account_created' => '账户创建成功。',
+        'account_updated' => '账户信息已成功更新。',
     ],
 ];

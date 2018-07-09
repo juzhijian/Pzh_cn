@@ -9,7 +9,7 @@
 
 return [
     'notices' => [
-        'created' => 'A new nest, :name, has been successfully created.',
+        'created' => '服务 :name, 已经成功被创建.',
         'deleted' => 'Successfully deleted the requested nest from the Panel.',
         'updated' => 'Successfully updated the nest configuration options.',
     ],

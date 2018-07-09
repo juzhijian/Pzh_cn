@@ -11,9 +11,9 @@ return [
     | has failed, such as for an invalid token or invalid new password.
     |
     */
-    'password' => 'Passwords must be at least six characters and match the confirmation.',
-    'reset' => 'Your password has been reset!',
-    'sent' => 'We have e-mailed your password reset link!',
-    'token' => 'This password reset token is invalid.',
-    'user' => "We can't find a user with that e-mail address.",
+    'password' => '密码必须至少6位，并且请确保密码是正确的。',
+    'reset' => '您的密码已被重置！',
+    'sent' => '我们已像您的邮箱内发送了一封密码重置邮件。',
+    'token' => '此密码重置请求无效。',
+    'user' => "我们找不到这个用户。",
 ];
