@@ -74,6 +74,7 @@ return [
     'tasks' => '任务',
     'seconds' => '秒',
     'minutes' => '分',
+    'under_maintenance' => 'Under Maintenance',
     'days' => [
         'sun' => '星期日',
         'mon' => '星期一',

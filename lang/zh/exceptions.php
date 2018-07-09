@@ -11,6 +11,7 @@ return [
         'too_many_ports' => '不能一次性添加超过1000给端口，请缩小范围！',
         'invalid_mapping' => ':port 端口的映射无效！',
         'cidr_out_of_range' => 'CIDR 只允许 /25 或 /32 之间的掩码。',
+        'port_out_of_range' => 'Ports in an allocation must be greater than 1024 and less than or equal to 65535.',
     ],
     'nest' => [
         'delete_has_servers' => '此服务已经在使用了，我们无法删除。',
@@ -23,6 +24,7 @@ return [
         'variables' => [
             'env_not_unique' => 'The environment variable :name must be unique to this Egg.',
             'reserved_name' => 'The environment variable :name is protected and cannot be assigned to a variable.',
+            'bad_validation_rule' => 'The validation rule ":rule" is not a valid rule for this application.',
         ],
         'importer' => [
             'json_error' => 'There was an error while attempting to parse the JSON file: :error.',

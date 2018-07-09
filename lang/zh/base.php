@@ -21,6 +21,11 @@ return [
             'header' => '此服务器已被暂停',
             'desc' => '该服务器已被暂停，您无法访问。',
         ],
+        'maintenance' => [
+            'header' => 'Node Under Maintenance',
+            'title' => 'Temporarily Unavailable',
+            'desc' => 'This node is under maintenance, therefore your server can temporarily not be accessed.',
+        ],
     ],
     'index' => [
         'header' => '您的服务器',
@@ -62,7 +67,7 @@ return [
         'new_email' => '新邮箱地址',
         'first_name' => '姓',
         'last_name' => '名',
-        'update_identitity' => '更新信息',
+        'update_identity' => '更新信息',
         'username_help' => '用户名必须是唯一的，且只允许使用这些字符: :requirements.',
     ],
     'security' => [

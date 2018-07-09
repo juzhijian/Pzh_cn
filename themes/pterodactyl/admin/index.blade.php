@@ -42,7 +42,7 @@
 </div>
 <div class="row">
     <div class="col-xs-6 col-sm-3 text-center">
-        <a href="https://jq.qq.com/?_wv=1027&k=5C8YFrl"><button class="btn btn-warning" style="width:100%;"><i class="fa fa-fw fa-support"></i> 获取帮助 <small>(QQ群)</small></button></a>
+        <a href="{{ $version->getDiscord() }}"><button class="btn btn-warning" style="width:100%;"><i class="fa fa-fw fa-support"></i> 获取帮助 <small>(via Discord)</small></button></a>
     </div>
     <div class="col-xs-6 col-sm-3 text-center">
         <a href="https://docs.pterodactyl.io"><button class="btn btn-primary" style="width:100%;"><i class="fa fa-fw fa-link"></i> 文档</button></a>
