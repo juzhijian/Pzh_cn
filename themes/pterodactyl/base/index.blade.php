@@ -23,10 +23,10 @@
         <div class="box">
             <div class="box-header">
                 <h3 class="box-title">@lang('base.index.list')</h3>
-                <div class="box-tools search01">
+                <div class="box-tools">
                     <form action="{{ route('index') }}" method="GET">
                         <div class="input-group input-group-sm">
-                            <input type="text" name="query" class="form-control pull-right" value="{{ request()->input('query') }}" placeholder="@lang('strings.search')">
+                            <input type="text" name="query" class="form-control pull-right" style="width:30%;" value="{{ request()->input('query') }}" placeholder="@lang('strings.search')">
                             <div class="input-group-btn">
                                 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                             </div>
@@ -64,15 +64,9 @@
                                         <span class="label bg-blue">@lang('strings.subuser')</span>
                                     @endif
                                 </td>
-                                @if($server->node->maintenance_mode)
-                                    <td class="text-center">
-                                        <span class="label label-warning">@lang('strings.under_maintenance')</span>
-                                    </td>
-                                @else
-                                    <td class="text-center" data-action="status">
-                                        <span class="label label-default"><i class="fa fa-refresh fa-fw fa-spin"></i></span>
-                                    </td>
-                                @endif
+                                <td class="text-center" data-action="status">
+                                    <span class="label label-default"><i class="fa fa-refresh fa-fw fa-spin"></i></span>
+                                </td>
                             </tr>
                             @if (! empty($server->description))
                                 <tr class="server-description">

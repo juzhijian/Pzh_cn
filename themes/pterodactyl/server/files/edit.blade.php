@@ -52,7 +52,6 @@
     <script>
         $(document).ready(function () {
             Editor.setValue($('#editorSetContent').val(), -1);
-            Editor.getSession().setUndoManager(new ace.UndoManager());
             $('#editorLoadingOverlay').hide();
         });
     </script>

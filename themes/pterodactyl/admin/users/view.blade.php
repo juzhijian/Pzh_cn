@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="control-label">Default Language</label>
+                        <label class="control-label">Default Langauge</label>
                         <div>
                             <select name="language" class="form-control">
                                 @foreach($languages as $key => $value)
