@@ -39,10 +39,10 @@
                 </div>
             </div>
             <div class="box-footer text-center">
-                @can('power-start', $server)<button class="btn btn-success disabled" data-attr="power" data-action="start">Start</button>@endcan
-                @can('power-restart', $server)<button class="btn btn-primary disabled" data-attr="power" data-action="restart">Restart</button>@endcan
-                @can('power-stop', $server)<button class="btn btn-danger disabled" data-attr="power" data-action="stop">Stop</button>@endcan
-                @can('power-kill', $server)<button class="btn btn-danger disabled" data-attr="power" data-action="kill">Kill</button>@endcan
+                @can('power-start', $server)<button class="btn btn-success disabled" data-attr="power" data-action="start">启动</button>@endcan
+                @can('power-restart', $server)<button class="btn btn-primary disabled" data-attr="power" data-action="restart">重启</button>@endcan
+                @can('power-stop', $server)<button class="btn btn-danger disabled" data-attr="power" data-action="stop">停止</button>@endcan
+                @can('power-kill', $server)<button class="btn btn-danger disabled" data-attr="power" data-action="kill">强制关闭</button>@endcan
             </div>
         </div>
     </div>
@@ -51,7 +51,7 @@
     <div class="col-sm-6">
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Memory Usage</h3>
+                <h3 class="box-title">内存使用率</h3>
             </div>
             <div class="box-body">
                 <canvas id="chart_memory" style="max-height:300px;"></canvas>
@@ -61,7 +61,7 @@
     <div class="col-sm-6">
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">CPU Usage</h3>
+                <h3 class="box-title">CPU使用率</h3>
             </div>
             <div class="box-body">
                 <canvas id="chart_cpu" style="max-height:300px;"></canvas>

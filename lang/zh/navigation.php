@@ -27,6 +27,6 @@ return [
         'edit_file' => '编辑文件',
         'admin_header' => '管理',
         'admin' => '服务器配置',
-        'server_name' => 'Server Name',
+        'server_name' => '服务器名',
     ],
 ];
