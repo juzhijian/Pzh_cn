@@ -1,0 +1,313 @@
+<?php
+
+return [
+    'index' => [
+        'title' => 'Server :name',
+        'header' => 'Server Konsole',
+        'header_sub' => 'Verwalte deinen Server in Echtzeit.',
+    ],
+    'schedule' => [
+        'header' => 'Zeitplan-Manager',
+        'header_sub' => 'Erstelle geplante Aktionen.',
+        'current' => 'Derzeitig geplante Aktionen',
+        'new' => [
+            'header' => 'Neue Aktion erstellen',
+            'header_sub' => 'Erstelle eine neue Gruppe von Aktionen.',
+            'submit' => 'Aktion erstellen',
+        ],
+        'manage' => [
+            'header' => 'Aktion verwalten',
+            'submit' => 'Aktion bearbeiten',
+            'delete' => 'Aktion löschen',
+        ],
+        'task' => [
+            'time' => 'Nach',
+            'action' => 'Aktion ausführen',
+            'payload' => 'Mit Payload',
+            'add_more' => 'Weitere Aktion',
+        ],
+        'actions' => [
+            'command' => 'Befehl ausführen',
+            'power' => 'Status-Aktion',
+        ],
+        'unnamed' => 'Unbenannter Zeitplan',
+        'setup' => 'Plaungseinrichtung',
+        'day_of_week' => 'Wochentag',
+        'day_of_month' => 'Tag der Monats',
+        'hour' => 'Stunde des Tages',
+        'minute' => 'Minute der Stunde',
+        'time_help' => 'Dieses System unterstützt dern Cronjob Syntax.',
+        'task_help' => 'Zeiten von Aufgaben hängen von den vorher bestimmten Aufgaben ab. Jeder Zeitplan darf maximal 5 Aufgaben enthalten und die Aufgaben dürfen höchstens 15 Minuten auseinanderliegen',
+    ],
+    'tasks' => [
+        'task_created' => 'Aktion erfolgreich erstellt.',
+        'task_updated' => 'Aktion bearbeitet.',
+        'header' => 'Geplante Aufgaben',
+        'header_sub' => 'Automatisiere deinen Server.',
+        'current' => 'Aktuelle Aktionen',
+        'actions' => [
+            'command' => 'Befhel ausführen',
+            'power' => 'Status-Aktion ausführen',
+        ],
+        'new_task' => 'Neue Aktion erstellen',
+        'toggle' => 'Status ändern',
+        'new' => [
+            'header' => 'Neue Aktion',
+            'header_sub' => 'Neue Aktion erstellen.',
+            'task_name' => 'Name',
+            'day_of_week' => 'Wochentag',
+            'custom' => 'Custom Value',
+            'day_of_month' => 'Tag des Monats',
+            'hour' => 'Stunde',
+            'minute' => 'Minute',
+            'sun' => 'Sonntag',
+            'mon' => 'Montag',
+            'tues' => 'Dienstag',
+            'wed' => 'Mittwoch',
+            'thurs' => 'Donnerstag',
+            'fri' => 'Freitag',
+            'sat' => 'Samstag',
+            'submit' => 'Absenden',
+            'type' => 'Typ',
+            'chain_then' => 'Dann, Danach',
+            'chain_do' => 'Tu',
+            'chain_arguments' => 'Mit Argumenten',
+            'payload' => 'Aufgaben Payload',
+            'payload_help' => 'Wenn du die "Befehl Senden" Methode ausgewählt hast wird dieser Befehl zur angegebenen Zeit ausgeführt.',
+        ],
+        'edit' => [
+            'header' => 'Aktion bearbeiten',
+            'submit' => 'Abschicken',
+        ],
+    ],
+    'users' => [
+        'header' => 'Benutzer verwalten',
+        'header_sub' => 'Bestimme wer den Server verwalten kann.',
+        'configure' => 'Rechte einstellen',
+        'list' => 'Account-Liste',
+        'add' => 'Neuen Benutzer erstellen',
+        'update' => 'Benutzer bearbeiten',
+        'user_assigned' => 'Benutzer dem Server zugewiesen.',
+        'user_updated' => 'Benutzer-Rechte erfolgreich aktualisiert.',
+        'edit' => [
+            'header' => 'Benutzer bearbeiten',
+            'header_sub' => 'Bearbeite den Zugriff eines Benutzers auf deine Server.',
+        ],
+        'new' => [
+            'header' => 'Neuen Benutzer erstellen',
+            'header_sub' => 'Erstelle einen neuen Benutzer und gebe ihm Zugirff auf einen Server.',
+            'email' => 'Email Addresse',
+            'email_help' => 'Email Adresse für Einladungs-Mail.',
+            'power_header' => 'Status-Verwaltung',
+            'file_header' => 'Dateiverwaltung',
+            'subuser_header' => 'Subuser-Verwaltung',
+            'server_header' => 'Server-Verwaltung',
+            'task_header' => 'Zeitplan-Verwaltung',
+            'database_header' => 'Datenbank-Verwaltung',
+            'power_start' => [
+                'title' => 'Server starten',
+                'description' => 'Der Benutzer darf den Server starten.',
+            ],
+            'power_stop' => [
+                'title' => 'Server stoppen',
+                'description' => 'Der Benutzer darf den Server stoppen.',
+            ],
+            'power_restart' => [
+                'title' => 'Server neustarten',
+                'description' => 'Der Benutzer darf den Server neustarten.',
+            ],
+            'power_kill' => [
+                'title' => 'Server abbrechen',
+                'description' => 'Der Benutzer darf den Prozess des Servers beenden.',
+            ],
+            'send_command' => [
+                'title' => 'Konsolenbefehl senden',
+                'description' => 'Der Benutzer darf die Konsole benutzen.',
+            ],
+            'access_sftp' => [
+                'title' => 'SFTP erlaubt',
+                'description' => 'Ermöglicht dem Benutzer, eine Verbindung mit dem vom Daemon bereitgestellten SFTP-Server herzustellen.',
+            ],
+            'list_files' => [
+                'title' => 'Dateien auflisten',
+                'description' => 'Der Benutzer darf die Server-Dateien einsehen.',
+            ],
+            'edit_files' => [
+                'title' => 'Dateien bearbeiten',
+                'description' => 'Der Benutzer darf die Server-Dateien bearbeiten. SFTP ist von dieser Erlaubnis nicht betroffen.',
+            ],
+            'save_files' => [
+                'title' => 'Dateien speichern',
+                'description' => 'Der Benutzer darf die Server-Dateien speichern. SFTP ist von dieser Erlaubnis nicht betroffen.',
+            ],
+            'move_files' => [
+                'title' => 'Dateien umbenennen & verschieben',
+                'description' => 'Der Benutzer darf die Server-Dateien ubenennen und verschieben.',
+            ],
+            'copy_files' => [
+                'title' => 'Dateien kopieren',
+                'description' => 'Der Benutzer darf die Server-Dateien kopieren.',
+            ],
+            'compress_files' => [
+                'title' => 'Dateien komprimieren',
+                'description' => 'Der Benutzer darf die Server-Dateien komprimieren(zip).',
+            ],
+            'decompress_files' => [
+                'title' => 'Archive entpacken',
+                'description' => 'Der Benutzer darf Zip-Archive entpacken.',
+            ],
+            'create_files' => [
+                'title' => 'Dateien erstellen',
+                'description' => 'Der Benutzer darf Dateien auf dem Server erstellen.',
+            ],
+            'upload_files' => [
+                'title' => 'Dateien hochladen',
+                'description' => 'Der Benutzer darf Dateien auf den Server hochladen.',
+            ],
+            'delete_files' => [
+                'title' => 'Dateien löschen',
+                'description' => 'Der Benutzer darf Dateien vom Server löschen.',
+            ],
+            'download_files' => [
+                'title' => 'Dateien herunterladen',
+                'description' => 'Der Benutzer darf Dateien vom Server herunterladen.',
+            ],
+            'list_subusers' => [
+                'title' => 'Subuser auflisten',
+                'description' => 'Der Benutzer darf sich Subuser auflisten lassen.',
+            ],
+            'view_subuser' => [
+                'title' => 'Subuser einsehen',
+                'description' => 'Der Benutzer darf Subuser genau einsehen.',
+            ],
+            'edit_subuser' => [
+                'title' => 'Subuser bearbeiten',
+                'description' => 'Der Benutzer darf Subuser bearbeiten.',
+            ],
+            'create_subuser' => [
+                'title' => 'Subuser erstellen',
+                'description' => 'Der Benutzer darf Subuser erstellen.',
+            ],
+            'delete_subuser' => [
+                'title' => 'Subuser löschen',
+                'description' => 'Der Benutzer darf Subuser löschen.',
+            ],
+            'view_allocations' => [
+                'title' => 'Zuweisungen einsehen',
+                'description' => 'Der Benutzer darf alle zugewiesenen Ports und IPs einsehen.',
+            ],
+            'edit_allocation' => [
+                'title' => 'Standardverbindung bearbeiten',
+                'description' => 'Der Benutzer darf die Standardverbindung des Servers bearbeiten.',
+            ],
+            'view_startup' => [
+                'title' => 'Startbefehl einsehen',
+                'description' => 'Der Benutzer darf den Startbefehl und alle einhergehende Variablen einsehen.',
+            ],
+            'edit_startup' => [
+                'title' => 'Startbefehl bearbeiten',
+                'description' => 'Der Benutzer darf die Startvariablen des Servers bearbeiten.',
+            ],
+            'list_schedules' => [
+                'title' => 'Zeitpläne auflisten',
+                'description' => 'Der Benutzer darf geplante Aktionen für den Server einsehen.',
+            ],
+            'view_schedule' => [
+                'title' => 'Geplante Aktionen einsehen',
+                'description' => 'Der Benutzer darf geplante Aktion im Detail einsehen.',
+            ],
+            'toggle_schedule' => [
+                'title' => 'Geplante Aktionen de-/aktivieren',
+                'description' => 'Der Benutzer darf geplante Aktionen für den Server ein- bzw. ausschalten.',
+            ],
+            'queue_schedule' => [
+                'title' => 'Zeitpläne anstellen',
+                'description' => 'Der Benutzer darf einen Zeitplan seine Aktionen im nächsten Prozess-Zyklus ausführen lassen.',
+            ],
+            'edit_schedule' => [
+                'title' => 'Zeitpläne bearbeiten',
+                'description' => 'Der Benutzer darf geplante Aktionen für den Server bearbeiten.',
+            ],
+            'create_schedule' => [
+                'title' => 'Zeitpläne erstellen',
+                'description' => 'Der Benutzer darf geplante Aktionen für den Server erstellen.',
+            ],
+            'delete_schedule' => [
+                'title' => 'Zeitpläne löschen',
+                'description' => 'Der Benutzer darf geplante Aktionen für den Server löschen.',
+            ],
+            'view_databases' => [
+                'title' => 'Datenbankinformationen einsehen',
+                'description' => 'Der Benutzer darf genaue Datenbankinformationen einsehen.',
+            ],
+            'reset_db_password' => [
+                'title' => 'Datenbankpasswort zurücksetzen',
+                'description' => 'Der Benutzer darf das Datenbankpasswort zurücksetzen.',
+            ],
+        ],
+    ],
+    'files' => [
+        'exceptions' => [
+            'invalid_mime' => 'Diese Datei kann leider nicht bearbeitet werden',
+            'max_size' => 'Diese Datei ist zu groß um bearbeitet zu werden.',
+        ],
+        'header' => 'Dateiverwaltung',
+        'header_sub' => 'Verwalte deine Dateien.',
+        'loading' => 'Dateien werden geladen. Bitte warten...',
+        'path' => 'Wenn du Ordner erstellst solltest du :path als Basis Ordner verwenden! Der maximale Upload beträgt: :size.',
+        'seconds_ago' => 'Sekunden her',
+        'file_name' => 'Dateiname',
+        'size' => 'Größe',
+        'last_modified' => 'Zuletzt bearbeitet',
+        'add_new' => 'Neue Datei erstellen',
+        'add_folder' => 'Neuen Ordner ertsllen',
+        'mass_actions' => 'Massenaktionen',
+        'delete' => 'Löschen',
+        'edit' => [
+            'header' => 'Datei bearbeiten',
+            'header_sub' => 'Bearbeite Dateien direkt im Browser.',
+            'save' => 'Datei speichern',
+            'return' => 'Zurück zum Datei Manager',
+        ],
+        'add' => [
+            'header' => 'Neue Datei',
+            'header_sub' => 'Erstelle eine neue Datei.',
+            'name' => 'Dateiname',
+            'create' => 'Datei erstellen',
+        ],
+    ],
+    'config' => [
+        'startup' => [
+            'header' => 'Start Konfiguration',
+            'header_sub' => 'Bearbeite die Startparameter des Serves.',
+            'command' => 'Startbefehl',
+            'edit_params' => 'Parameter bearbeiten',
+            'update' => 'Absenden',
+            'startup_regex' => 'Input Rules',
+            'edited' => 'Die Einstellungen wurden gespeichert und werden beim nächsten Serverstart verwendet.',
+        ],
+        'sftp' => [
+            'header' => 'SFTP Informationen',
+            'header_sub' => 'Details für eine SFTP-Verbindung.',
+            'details' => 'SFTP Details',
+            'conn_addr' => 'Adresse',
+            'warning' => 'Achtung! Benutze unbedingt SFTP und nicht FTP!.',
+        ],
+        'database' => [
+            'header' => 'Datenbanken',
+            'header_sub' => 'Alle für diesen Server verfügbaren Datenbanken.',
+            'your_dbs' => 'Deine Datenbanken',
+            'host' => 'MySQL Host',
+            'reset_password' => 'Passwort zurücksetzen',
+            'no_dbs' => 'Du hast leider keine Datenbanken.',
+            'add_db' => 'Datenbank hinzufügen.',
+        ],
+        'allocation' => [
+            'header' => 'Server Zuweisungen',
+            'header_sub' => 'Verwalte alle zugewiesenen IPs und Ports.',
+            'available' => 'Verfügbare Zuweisungen',
+            'help' => 'Hilfe mit Zuweisungen',
+            'help_text' => 'Die Liste links beinhaltet alle verfügbaren IPs und Ports, die dein Server für eingehende Verbindungen verwenden kann.',
+        ],
+    ],
+];
