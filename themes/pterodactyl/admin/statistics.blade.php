@@ -2,11 +2,11 @@
 @include('partials/admin.settings.nav', ['activeTab' => 'basic'])
 
 @section('title')
-    Statistics Overview
+    统计概述
 @endsection
 
 @section('content-header')
-    <h1>Statistics Overview<small>Monitor your panel usage.</small></h1>
+    <h1>统计概述<small>监控面板使用情况.</small></h1>
     <ol class="breadcrumb">
         <li><a href="{{ route('admin.index') }}">Admin</a></li>
         <li class="active">Statistics</li>

@@ -82,7 +82,7 @@
                         </li>
                         <li class="{{ Route::currentRouteName() !== 'admin.statistics' ?: 'active' }}">
                             <a href="{{ route('admin.statistics') }}">
-                                <i class="fa fa-tachometer"></i> <span>Statistics</span>
+                                <i class="fa fa-tachometer"></i> <span>统计</span>
                             </a>
                         </li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.settings') ?: 'active' }}">

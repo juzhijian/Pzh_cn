@@ -22,7 +22,7 @@
     <div class="col-xs-12">
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Host List</h3>
+                <h3 class="box-title">服务器列表</h3>
                 <div class="box-tools">
                     <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#newHostModal">新建</button>
                 </div>
@@ -74,36 +74,36 @@
                     <div class="form-group">
                         <label for="pName" class="form-label">名称</label>
                         <input type="text" name="name" id="pName" class="form-control" />
-                        <p class="text-muted small">A short identifier used to distinguish this location from others. Must be between 1 and 60 characters, for example, <code>us.nyc.lvl3</code>.</p>
+                        <p class="text-muted small">用来区分这个位置和其他位置的短标识符。必须在1到60个字符之间，例如, <code>us.nyc.lvl3</code>.</p>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="pHost" class="form-label">Host</label>
+                            <label for="pHost" class="form-label">地址</label>
                             <input type="text" name="host" id="pHost" class="form-control" />
-                            <p class="text-muted small">The IP address or FQDN that should be used when attempting to connect to this MySQL host <em>from the panel</em> to add new databases.</p>
+                            <p class="text-muted small">当试图从面板连接到该MySQL主机以添加新数据库时，应该使用的IP地址或FQDN.</p>
                         </div>
                         <div class="col-md-6">
-                            <label for="pPort" class="form-label">Port</label>
+                            <label for="pPort" class="form-label">端口</label>
                             <input type="text" name="port" id="pPort" class="form-control" value="3306"/>
-                            <p class="text-muted small">The port that MySQL is running on for this host.</p>
+                            <p class="text-muted small">在这个主机上运行MySQL的端口.</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="pUsername" class="form-label">Username</label>
+                            <label for="pUsername" class="form-label">用户名</label>
                             <input type="text" name="username" id="pUsername" class="form-control" />
-                            <p class="text-muted small">The username of an account that has enough permissions to create new users and databases on the system.</p>
+                            <p class="text-muted small">数据库的账户，该帐户具有足够的权限来在系统上创建新用户和数据库.</p>
                         </div>
                         <div class="col-md-6">
-                            <label for="pPassword" class="form-label">Password</label>
+                            <label for="pPassword" class="form-label">密码</label>
                             <input type="password" name="password" id="pPassword" class="form-control" />
-                            <p class="text-muted small">The password to the account defined.</p>
+                            <p class="text-muted small">帐户设置的密码.</p>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="pNodeId" class="form-label">Linked Node</label>
+                        <label for="pNodeId" class="form-label">链接节点</label>
                         <select name="node_id" id="pNodeId" class="form-control">
-                            <option value="">None</option>
+                            <option value="">空</option>
                             @foreach($locations as $location)
                                 <optgroup label="{{ $location->short }}">
                                     @foreach($location->nodes as $node)
@@ -112,14 +112,14 @@
                                 </optgroup>
                             @endforeach
                         </select>
-                        <p class="text-muted small">This setting does nothing other than default to this database host when adding a database to a server on the selected node.</p>
+                        <p class="text-muted small">当将数据库添加到选定节点上的服务器时，此设置对该数据库宿主没有任何影响.</p>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <p class="text-danger small text-left">The account defined for this database host <strong>must</strong> have the <code>WITH GRANT OPTION</code> permission. If the defined account does not have this permission requests to create databases <em>will</em> fail. <strong>Do not use the same account details for MySQL that you have defined for this panel.</strong></p>
+                    <p class="text-danger small text-left">为此数据库宿主定义的帐户 <strong> 必须 </strong> 具有 <code>授予权限</code> 权限. 如果定义的帐户没有此权限，则创建数据库的权限 <em>将</em> 失败. <strong>不要使用与此面板定义的MySQL相同的帐户信息.</strong></p>
                     {!! csrf_field() !!}
-                    <button type="button" class="btn btn-default btn-sm pull-left" data-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-success btn-sm">Create</button>
+                    <button type="button" class="btn btn-default btn-sm pull-left" data-dismiss="modal">取消</button>
+                    <button type="submit" class="btn btn-success btn-sm">新建</button>
                 </div>
             </form>
         </div>
