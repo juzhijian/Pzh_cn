@@ -6,14 +6,14 @@
 @extends('layouts.admin')
 
 @section('title')
-    数据库服务器
+    Database Hosts
 @endsection
 
 @section('content-header')
-    <h1>数据库服务器<small>服务器所能创建数据库的数据库服务器。.</small></h1>
+    <h1>Database Hosts<small>Database hosts that servers can have databases created on.</small></h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('admin.index') }}">后台</a></li>
-        <li class="active">数据库服务器</li>
+        <li><a href="{{ route('admin.index') }}">Admin</a></li>
+        <li class="active">Database Hosts</li>
     </ol>
 @endsection
 
@@ -24,7 +24,7 @@
             <div class="box-header with-border">
                 <h3 class="box-title">Host List</h3>
                 <div class="box-tools">
-                    <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#newHostModal">新建</button>
+                    <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#newHostModal">Create New</button>
                 </div>
             </div>
             <div class="box-body table-responsive no-padding">
@@ -32,12 +32,12 @@
                     <tbody>
                         <tr>
                             <th>ID</th>
-                            <th>名称</th>
-                            <th>地址</th>
-                            <th>端口</th>
-                            <th>用户名</th>
-                            <th class="text-center">数据库</th>
-                            <th class="text-center">节点</th>
+                            <th>Name</th>
+                            <th>Host</th>
+                            <th>Port</th>
+                            <th>Username</th>
+                            <th class="text-center">Databases</th>
+                            <th class="text-center">Node</th>
                         </tr>
                         @foreach ($hosts as $host)
                             <tr>
@@ -51,7 +51,7 @@
                                     @if(! is_null($host->node))
                                         <a href="{{ route('admin.nodes.view', $host->node->id) }}">{{ $host->node->name }}</a>
                                     @else
-                                        <span class="label label-default">无</span>
+                                        <span class="label label-default">None</span>
                                     @endif
                                 </td>
                             </tr>
@@ -68,11 +68,11 @@
             <form action="{{ route('admin.databases') }}" method="POST">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">新建一个数据库主机</h4>
+                    <h4 class="modal-title">Create New Database Host</h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="pName" class="form-label">名称</label>
+                        <label for="pName" class="form-label">Name</label>
                         <input type="text" name="name" id="pName" class="form-control" />
                         <p class="text-muted small">A short identifier used to distinguish this location from others. Must be between 1 and 60 characters, for example, <code>us.nyc.lvl3</code>.</p>
                     </div>
