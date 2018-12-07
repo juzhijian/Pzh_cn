@@ -87,7 +87,7 @@
                 @if($overLimit)
                     <div class="box-body">
                         <div class="alert alert-danger no-margin">
-                            您当前使用的是 <strong>{{ count($databases) }}</strong> 个，允许使用的共有 <strong>{{ $server->database_limit ?? '&infin;' }}</strong> 个.
+                            您当前使用的是 <strong>{{ count($databases) }}</strong> 个，允许使用的共有 <strong>{{ $server->database_limit ?? '∞' }}</strong> 个.
                         </div>
                     </div>
                 @else

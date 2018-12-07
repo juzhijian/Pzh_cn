@@ -9,8 +9,8 @@
 
 return [
     'notices' => [
-        'pack_updated' => '此服务包已成功更新。',
-        'pack_deleted' => 'Successfully deleted the pack ":name" from the system.',
-        'pack_created' => 'A new pack was successfully created on the system and is now available for deployment to servers.',
+        'pack_updated' => '整合包已经被更新。',
+        'pack_deleted' => '成功删除整合包： ":name" 。',
+        'pack_created' => '一个整合包已被成功创建，现在可以用它来部署服务器了。',
     ],
 ];

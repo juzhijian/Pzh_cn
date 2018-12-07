@@ -9,15 +9,15 @@
 
 return [
     'validation' => [
-        'fqdn_not_resolvable' => 'The FQDN or IP address provided does not resolve to a valid IP address.',
-        'fqdn_required_for_ssl' => 'A fully qualified domain name that resolves to a public IP address is required in order to use SSL for this node.',
+        'fqdn_not_resolvable' => '提供的域名或地址没有解析到一个合法的IP地址.',
+        'fqdn_required_for_ssl' => '这个节点要求解析到一个公共IP的域名必须使用SSL',
     ],
     'notices' => [
-        'allocations_added' => 'Allocations have successfully been added to this node.',
-        'node_deleted' => 'Node has been successfully removed from the panel.',
-        'location_required' => 'You must have at least one location configured before you can add a node to this panel.',
-        'node_created' => 'Successfully created new node. You can automatically configure the daemon on this machine by visiting the \'Configuration\' tab. <strong>Before you can add any servers you must first allocate at least one IP address and port.</strong>',
-        'node_updated' => 'Node information has been updated. If any daemon settings were changed you will need to reboot it for those changes to take effect.',
-        'unallocated_deleted' => 'Deleted all un-allocated ports for <code>:ip</code>.',
+        'allocations_added' => '配额已经成功的被添加到这个节点.',
+        'node_deleted' => '节点成功从面板中移除.',
+        'location_required' => '在你可以添加一个节点之前必须至少有一个可用区配置。',
+        'node_created' => '节点新建成功！ 使用 \'Configuration\' 标签，你可以在此节点上自动配置受控端. <strong>在你可以创建服务器之前，你必须至少分配一个IP和端口</strong>',
+        'node_updated' => '节点信息更新成功！如果任何节点受控端的设置更改了，您需要重启受控端来使设置生效.',
+        'unallocated_deleted' => '已删除 <code>:ip</code> 上的所有未分配的端口',
     ],
 ];

@@ -12,6 +12,6 @@ return [
     |
     */
 
-    'previous' => '&laquo; 上一页',
-    'next' => '下一页 &raquo;',
+    'previous' => '&laquo; 上一步',
+    'next' => '下一步 &raquo;',
 ];
