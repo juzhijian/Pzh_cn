@@ -74,62 +74,62 @@
             <aside class="main-sidebar">
                 <section class="sidebar">
                     <ul class="sidebar-menu">
-                        <li class="header">基本管理</li>
+                        <li class="header">BASIC ADMINISTRATION</li>
                         <li class="{{ Route::currentRouteName() !== 'admin.index' ?: 'active' }}">
                             <a href="{{ route('admin.index') }}">
-                                <i class="fa fa-home"></i> <span>概况</span>
+                                <i class="fa fa-home"></i> <span>Overview</span>
                             </a>
                         </li>
                         <li class="{{ Route::currentRouteName() !== 'admin.statistics' ?: 'active' }}">
                             <a href="{{ route('admin.statistics') }}">
-                                <i class="fa fa-tachometer"></i> <span>统计</span>
+                                <i class="fa fa-tachometer"></i> <span>Statistics</span>
                             </a>
                         </li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.settings') ?: 'active' }}">
                             <a href="{{ route('admin.settings')}}">
-                                <i class="fa fa-wrench"></i> <span>选项</span>
+                                <i class="fa fa-wrench"></i> <span>Settings</span>
                             </a>
                         </li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.api') ?: 'active' }}">
                             <a href="{{ route('admin.api.index')}}">
-                                <i class="fa fa-gamepad"></i> <span>面板API</span>
+                                <i class="fa fa-gamepad"></i> <span>Application API</span>
                             </a>
                         </li>
-                        <li class="header">管理服务器</li>
+                        <li class="header">MANAGEMENT</li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.databases') ?: 'active' }}">
                             <a href="{{ route('admin.databases') }}">
-                                <i class="fa fa-database"></i> <span>数据库</span>
+                                <i class="fa fa-database"></i> <span>Databases</span>
                             </a>
                         </li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.locations') ?: 'active' }}">
                             <a href="{{ route('admin.locations') }}">
-                                <i class="fa fa-globe"></i> <span>位置</span>
+                                <i class="fa fa-globe"></i> <span>Locations</span>
                             </a>
                         </li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.nodes') ?: 'active' }}">
                             <a href="{{ route('admin.nodes') }}">
-                                <i class="fa fa-sitemap"></i> <span>节点</span>
+                                <i class="fa fa-sitemap"></i> <span>Nodes</span>
                             </a>
                         </li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.servers') ?: 'active' }}">
                             <a href="{{ route('admin.servers') }}">
-                                <i class="fa fa-server"></i> <span>服务器</span>
+                                <i class="fa fa-server"></i> <span>Servers</span>
                             </a>
                         </li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.users') ?: 'active' }}">
                             <a href="{{ route('admin.users') }}">
-                                <i class="fa fa-users"></i> <span>用户</span>
+                                <i class="fa fa-users"></i> <span>Users</span>
                             </a>
                         </li>
-                        <li class="header">服务管理</li>
+                        <li class="header">SERVICE MANAGEMENT</li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.nests') ?: 'active' }}">
                             <a href="{{ route('admin.nests') }}">
-                                <i class="fa fa-th-large"></i> <span>服务项</span>
+                                <i class="fa fa-th-large"></i> <span>Nests</span>
                             </a>
                         </li>
                         <li class="{{ ! starts_with(Route::currentRouteName(), 'admin.packs') ?: 'active' }}">
                             <a href="{{ route('admin.packs') }}">
-                                <i class="fa fa-archive"></i> <span>服务包</span>
+                                <i class="fa fa-archive"></i> <span>Packs</span>
                             </a>
                         </li>
                     </ul>
@@ -195,12 +195,12 @@
 
                         var that = this;
                         swal({
-                            title: '您真的要登出吗?',
+                            title: 'Do you want to log out?',
                             type: 'warning',
                             showCancelButton: true,
                             confirmButtonColor: '#d9534f',
                             cancelButtonColor: '#d33',
-                            confirmButtonText: '登出'
+                            confirmButtonText: 'Log out'
                         }, function () {
                             window.location = $(that).attr('href');
                         });
