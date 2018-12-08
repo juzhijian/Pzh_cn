@@ -82,12 +82,12 @@
         <div class="col-xs-12 col-sm-4">
             <div class="box box-success">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Create New Database</h3>
+                    <h3 class="box-title">创建新数据库</h3>
                 </div>
                 @if($overLimit)
                     <div class="box-body">
                         <div class="alert alert-danger no-margin">
-                            You are currently using <strong>{{ count($databases) }}</strong> of your <strong>{{ $server->database_limit ?? '∞' }}</strong> allowed databases.
+                            您当前使用的是 <strong>{{ count($databases) }}</strong> 个，允许使用的共有 <strong>{{ $server->database_limit ?? '∞' }}</strong> 个.
                         </div>
                     </div>
                 @else

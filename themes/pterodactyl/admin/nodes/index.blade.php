@@ -1,4 +1,4 @@
-{{-- Pterodactyl - Panel --}}
+	{{-- Pterodactyl - Panel --}}
 {{-- Copyright (c) 2015 - 2017 Dane Everitt <dane@daneeveritt.com> --}}
 
 {{-- This software is licensed under the terms of the MIT license. --}}
@@ -15,10 +15,10 @@
 @endsection
 
 @section('content-header')
-    <h1>Nodes<small>All nodes available on the system.</small></h1>
+    <h1>节点<small>系统上所有的可用节点.</small></h1>
     <ol class="breadcrumb">
-        <li><a href="{{ route('admin.index') }}">Admin</a></li>
-        <li class="active">Nodes</li>
+        <li><a href="{{ route('admin.index') }}">后台</a></li>
+        <li class="active">节点</li>
     </ol>
 @endsection
 
@@ -27,14 +27,14 @@
     <div class="col-xs-12">
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title">Node List</h3>
+                <h3 class="box-title">节点列表</h3>
                 <div class="box-tools">
                     <form action="{{ route('admin.nodes') }}" method="GET">
                         <div class="input-group input-group-sm">
                             <input type="text" name="query" class="form-control pull-right" style="width:30%;" value="{{ request()->input('query') }}" placeholder="Search Nodes">
                             <div class="input-group-btn">
                                 <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                                <a href="{{ route('admin.nodes.new') }}"><button type="button" class="btn btn-sm btn-primary" style="border-radius: 0 3px 3px 0;margin-left:-1px;">Create New</button></a>
+                                <a href="{{ route('admin.nodes.new') }}"><button type="button" class="btn btn-sm btn-primary" style="border-radius: 0 3px 3px 0;margin-left:-1px;">新建</button></a>
                             </div>
                         </div>
                     </form>
@@ -45,13 +45,13 @@
                     <tbody>
                         <tr>
                             <th></th>
-                            <th>Name</th>
-                            <th>Location</th>
-                            <th>Memory</th>
-                            <th>Disk</th>
-                            <th class="text-center">Servers</th>
+                            <th>名称</th>
+                            <th>位置</th>
+                            <th>内存</th>
+                            <th>容量</th>
+                            <th class="text-center">服务器</th>
                             <th class="text-center">SSL</th>
-                            <th class="text-center">Public</th>
+                            <th class="text-center">公开</th>
                         </tr>
                         @foreach ($nodes as $node)
                             <tr>

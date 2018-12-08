@@ -22,18 +22,18 @@
         <div class="col-xs-12">
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Credentials List</h3>
+                    <h3 class="box-title">凭证列表</h3>
                     <div class="box-tools">
-                        <a href="{{ route('account.api.new') }}" class="btn btn-sm btn-primary">Create New</a>
+                        <a href="{{ route('account.api.new') }}" class="btn btn-sm btn-primary">创建凭证</a>
                     </div>
                 </div>
                 <div class="box-body table-responsive no-padding">
                     <table class="table table-hover">
                         <tr>
                             <th>Key</th>
-                            <th>Memo</th>
-                            <th>Last Used</th>
-                            <th>Created</th>
+                            <th>备注</th>
+                            <th>最后使用</th>
+                            <th>创建</th>
                             <th></th>
                         </tr>
                         @foreach($keys as $key)
